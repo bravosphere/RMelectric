@@ -1071,3 +1071,122 @@ textarea {
   font-style: normal;
   font-variation-settings: "wdth" 100;
 }
+
+
+.product-item {
+  border-radius: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+  position: relative;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.product-item:hover {
+  transform: translateY(-6px) scale(1.03);
+}
+
+.product-thumbnail {
+  max-width: 100%;
+  height: 160px;
+  object-fit: contain;
+  transition: transform 0.4s ease;
+  border-radius: 12px;
+}
+
+.product-item:hover .product-thumbnail {
+  transform: scale(1.07);
+}
+
+.product-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333;
+  margin: 10px 0 5px;
+}
+
+.product-price {
+  background-color: #00c76f;
+  color: white;
+  padding: 8px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  margin-top: 5px;
+  display: inline-block;
+}
+
+.icon-cross {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+}
+
+.icon-cross img {
+  width: 24px;
+  height: 24px;
+  opacity: 0.85;
+  transition: opacity 0.2s ease;
+}
+
+.icon-cross img:hover {
+  opacity: 1;
+}
+
+.btn-blue {
+  background-color: #1a73e8;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-blue:hover {
+  background-color: #135cc3;
+}
+
+.btn-green {
+  background-color: #00c76f;
+  color: white;
+  font-weight: 600;
+  border-radius: 30px;
+  padding: 10px 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-green:hover {
+  background-color: #00ad61;
+}
+
+@media (max-width: 767.98px) {
+  .product-thumbnail {
+    height: 130px;
+  }
+
+  .product-title {
+    font-size: 0.95rem;
+  }
+
+  .product-price {
+    font-size: 0.9rem;
+  }
+
+  .section-title {
+    font-size: 1.5rem;
+    text-align: center;
+  }
+
+  .btn-blue, .btn-green {
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .icon-cross {
+    bottom: 10px;
+    right: 10px;
+  }
+}
+
+/* MOremore */
+
